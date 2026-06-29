@@ -1,0 +1,14 @@
+[Unit]
+Description=llama cpp server
+After=network.target
+
+[Service]
+Type=simple
+User=llm
+Group=llm
+WorkingDirectory=/usr/local/llama.cpp/work
+ExecStart=/usr/local/llama.cpp/service/llama-server.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

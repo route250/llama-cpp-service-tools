@@ -1,0 +1,7 @@
+tmp/
+dist/
+build/
+bin/
+*-bin/
+logs/
+conf/
